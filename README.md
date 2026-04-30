@@ -46,7 +46,8 @@ Versi ini dikonfigurasi khusus untuk Universitas Pelita Bangsa (UPB) Cikarang, d
 <img width="1018" height="788" alt="Screenshot 2026-04-30 132424" src="https://github.com/user-attachments/assets/5ca0c39c-f0db-4363-a70c-e70efe45b460" />
 
 
-Berdasarkan alur kerja aplikasi, berikut adalah fungsi dari setiap halaman utama:
+
+## Berdasarkan alur kerja aplikasi, berikut adalah fungsi dari setiap halaman utama:
 
 1.Splash Screen: Layar pemuatan awal yang melakukan inisialisasi model AI dan pengecekan koneksi server.
 
