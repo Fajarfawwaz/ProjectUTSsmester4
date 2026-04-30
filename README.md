@@ -1,4 +1,4 @@
-# Absensi Fajar 📱 (Pelita Bangsa Edition)
+# Absensi Fajar 📱 
 
 Sistem Absensi Biometrik & Geofencing Berbasis Android Native
 
