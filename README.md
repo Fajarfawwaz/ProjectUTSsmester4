@@ -123,3 +123,7 @@ Jika Anda menemukan kendala teknis atau ingin berdiskusi mengenai pengembangan a
 •Email: Fajarfawwaz64@gmail.com
 
 •Universitas: Universitas Pelita Bangsa, Cikarang, Indonesia.
+
+
+## JIKA INGIN MENDOWNLOAD ATAU MENCOBA APLIKASI ABSENSI FAJAR SILAHKAN DOWNLOAD LINK DI BAWAH INI : 
+https://drive.google.com/file/d/1Jx134Xab7R_EOXVTHYTRIb2-YlJiDy2a/view?usp=sharing
