@@ -14,6 +14,8 @@ Sistem Absensi Biometrik & Geofencing Berbasis Android Native
 
 SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
+## UNTUK LINK CLICK UP ( SCRUM ) SEBAGAI BERIKUT : https://app.clickup.com/90181768471/v/l/6-901813018848-1 
+
 ## 📝 Deskripsi Proyek
 
 Absensi Fajar adalah solusi manajemen kehadiran cerdas yang dirancang khusus untuk meningkatkan integritas data di lingkungan kampus atau perkantoran. Aplikasi ini berfokus pada fitur Anti-Fraud (Anti-Kecurangan) dengan menggabungkan dua validasi utama secara bersamaan: Verifikasi Wajah (AI) dan Penguncian Lokasi (GPS).
