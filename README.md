@@ -67,13 +67,61 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 # - Halaman Absensi (Scanning & Geofencing):
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/13509c91-17c0-4c33-9749-47c17a21994e" />
+
 ## ◦ Validasi Lokasi: Memeriksa jarak user dengan koordinat Kampus UPB. Jika jarak > 150 meter, akses scan wajah ditutup (mencegah manipulasi lokasi).
 
 ## ◦ Biometric Verification: Mencocokkan wajah saat ini dengan data pendaftaran menggunakan algoritma Cosine Similarity.
 
 # - Halaman Riwayat (Attendance History):
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/ae48e7d5-5b64-432d-971b-d035204abb9a" />
+
 ## ◦ Menampilkan list kronologis kehadiran user yang diambil dari basis data lokal (SQLite).
+
+# - Halaman Pengajuan Izin (Digital Leave Request) :
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/a28fc16b-5d01-4e1d-861d-48a76a1eae20" />
+
+## Halaman ini berfungsi sebagai sistem administrasi jika mahasiswa berhalangan hadir (Sakit, Izin, atau Cuti).
+
+## • Formulir Digital: Input jenis izin (Sakit/Izin/Cuti), alasan keterangan tertulis, dan pemilihan tanggal.
+
+## • Lampiran Bukti (Camera Integration): Mahasiswa diwajibkan melampirkan foto bukti (misalnya: Surat Keterangan Dokter) yang diambil langsung melalui kamera sebagai validasi.
+
+## • Data Persistence:
+   
+   ### ◦ Lokal: Data disimpan ke tabel pengajuan_izin di SQLite.
+   
+   ### ◦ Cloud: Secara otomatis mengirimkan notifikasi status ke database AwardSpace sehingga Admin dapat melihat alasan ketidakhadiran di tabel rekapitulasi secara real-time.
+
+## • Business Logic: Pengajuan izin otomatis mengisi kolom status pada riwayat absensi sehingga persentase kehadiran tetap terhitung secara administratif.
+
+# - Halaman Profil & Manajemen Identitas (Identity Module) :
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/b7b4131a-2c81-4dfd-86eb-b16c9d3dc351" />
+
+Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangkat user.
+
+## • Visual Identity: Menampilkan foto profil mahasiswa yang diambil saat pendaftaran biometrik pertama kali (Face Enrollment).
+
+## • Informasi Personal: Menampilkan detail data yang tersimpan di server:
+   
+   ### ◦ Nama Lengkap & Email Akun.
+   
+   ### ◦ Nomor Telepon & Alamat.
+   
+   ### ◦ Tanggal Lahir.
+   
+   ### ◦ Role User: Menandakan status akun (Mahasiswa/Admin).
+
+## • Security Info (Device Integrity): 
+   
+   ### ◦ Face Registry Status: Menampilkan indikator apakah data wajah sudah tersinkronisasi dengan server Cloud.
+   
+   ### ◦ Device ID Binding: Menampilkan ID unik perangkat untuk memastikan akun tidak disalahgunakan di banyak perangkat berbeda.
+   
+## • Edit Profile: Fitur untuk memperbarui data nomor telepon dan alamat secara dinamis yang langsung memperbarui database SQLite lokal dan MySQL Cloud.
 
 # 2. Modul Administrator (Admin Control Panel)
 
