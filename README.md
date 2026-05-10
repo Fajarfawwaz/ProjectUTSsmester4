@@ -105,7 +105,7 @@
 
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/b7b4131a-2c81-4dfd-86eb-b16c9d3dc351" />
 
-Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangkat user.
+## Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangkat user.
 
 ## • Visual Identity: Menampilkan foto profil mahasiswa yang diambil saat pendaftaran biometrik pertama kali (Face Enrollment).
 
