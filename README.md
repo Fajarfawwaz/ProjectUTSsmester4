@@ -121,5 +121,7 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 3. Device Integrity: Sinkronisasi Cloud menjamin data tidak dapat dimanipulasi melalui clear cache atau pembersihan data lokal oleh user.
 
-👤 Developer
+
+# 👤 Developer
+
 Fajar Fawwaz Atallah Mahasiswa Teknik Informatika - Universitas Pelita Bangsa
