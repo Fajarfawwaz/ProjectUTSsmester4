@@ -127,45 +127,65 @@
    
 ## • Edit Profile: Fitur untuk memperbarui data nomor telepon dan alamat secara dinamis yang langsung memperbarui database SQLite lokal dan MySQL Cloud.
 
-# 2. Modul Administrator (Admin Control Panel)
+# 🖥️ Menu Utama Modul Administrator (Control Panel) :
 
-# - Admin Dashboard:
+## Panel Administrator menyediakan 5 menu fungsional utama untuk mengelola seluruh ekosistem absensi di tempat yang dia gunakan :
+
+# - 📊 Menu Monitoring (Rekapitulasi Kehadiran) :  
 
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/bde0ba62-d459-4954-9f2a-b646faaa9ba5" />
 
-## ◦ Global Stats: Menampilkan ringkasan kehadiran seluruh mahasiswa hari ini secara visual.
+# Menu ini berfungsi sebagai pusat pantauan performa kehadiran seluruh mahasiswa.
 
-## ◦ Digital Clock Real-time: Menunjukkan waktu server yang akurat.
+## • Rekapitulasi Otomatis: Menampilkan daftar nama mahasiswa beserta total akumulasi status Hadir, Terlambat, dan Izin.
 
-## ◦ Recent Activity Log: Menampilkan 5 aktivitas absensi terbaru dari seluruh mahasiswa untuk pengawasan instan.
+## • Detail Individu: Admin dapat mengklik salah satu nama untuk melihat rincian riwayat absensi spesifik milik mahasiswa tersebut.
 
-# - Halaman Monitoring Kehadiran (Rekapitulasi) dan Untuk Mendownload Detail Mahasiswa :
+# -  👥 Menu Mahasiswa (Manajemen Akun) :
+
+## Menu yang digunakan untuk mendata seluruh akun mahasiswa yang telah terdaftar di sistem. 
+
+## • Interaktif Tabel: Menggunakan desain Zebra-Style untuk memudahkan pembacaan data dalam jumlah banyak.
+
+## • Real-time Search: Dilengkapi fitur pencarian instan berdasarkan Nama atau Email untuk efisiensi manajemen data.
+
+## • Badge Role: Identifikasi visual untuk membedakan antara akun Mahasiswa dan Administrator.
+
+# - 📄 Menu Rekap Excel (Reporting) :
 
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/ca162704-934a-49c7-bcdd-2036ad2e8732" />
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/2914a62a-7598-43ee-b793-fbaff787c1ed" />
 
 
-## ◦ Daftar seluruh mahasiswa beserta total performa kehadiran (Hadir, Telat, Izin).
+## Menu ini didedikasikan untuk keperluan administratif dan pelaporan formal. 
 
-## ◦ Klik pada nama mahasiswa akan membuka halaman Detail Individu.
+## • Auto-Generator: Sistem secara otomatis mengonversi data dari database Cloud menjadi file format Excel (.xls).
 
-# - Halaman Daftar Mahasiswa (User Management):
+## • Global Report: Laporan yang dihasilkan mencakup seluruh record absensi yang masuk di server, siap untuk dicetak atau diarsipkan oleh bagian akademik.
+
+# - ⚙️ Menu Sistem (Konfigurasi & Maintenance) :
 
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/5e9275b4-612e-48a1-aec5-280a7eadf375" />
 
-## ◦ Tampilan format Tabel Zebra (selang-seling warna) untuk kenyamanan membaca data.
+## Dikenal sebagai fitur "Obeng", menu ini memberikan fleksibilitas bagi Admin untuk mengatur kebijakan kampus secara dinamis.
 
-## ◦ Real-time Search: Fitur pencarian instan berdasarkan nama atau email tanpa perlu memuat ulang halaman.
+## • Dynamic Geofencing: Admin dapat mengubah batas radius absen (misal: 150 meter) langsung dari aplikasi tanpa harus merubah kode program.
 
-# - Halaman Detail & Export:
+## • Time Policy: Pengaturan jam masuk kampus yang fleksibel sesuai kebijakan universitas.
+
+## • Security Tools: Tersedia fitur Reset Data (pembersihan riwayat per-semester) dan SQL Cloud Backup untuk keamanan basis data.
+
+# - 📩 Menu Validasi Izin & Sakit (Document Verification) :
 
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/4d007e37-b5b5-4884-a10f-d006cb2afaf3" />
 
-## ◦ Ringkasan profil mahasiswa.
+## Menu terbaru yang berfungsi untuk memvalidasi alasan ketidakhadiran mahasiswa.
 
-## ◦ Export to Excel (.xls): Menghasilkan laporan kehadiran individu yang siap cetak untuk keperluan administratif.
+## • Digital Evidence: Admin dapat melihat bukti foto (seperti surat dokter) yang diunggah mahasiswa melalui jalur Cloud.
 
-# - Halaman Kontrol Sistem (The "Obeng" Feature):
+## • Cross-Check: Menampilkan jenis izin, tanggal, dan alasan tertulis mahasiswa secara mendetail.
+
+## • Swipe to Refresh: Mendukung fitur tarik layar untuk menyinkronkan data pengajuan izin terbaru yang masuk.
 
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/5aefafe5-3f48-424e-b5fe-9e04d95cbddd" />
 
