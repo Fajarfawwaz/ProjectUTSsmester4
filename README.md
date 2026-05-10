@@ -39,12 +39,8 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 # LOGIN : 
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/6eaaffbb-2989-4040-8421-de88a9383aee" />
-
-
-# REGISTRASI : 
-
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/bb072d3d-7845-4599-980d-79e0f0179527" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/6eaaffbb-2989-4040-8421-de88a9383aee" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/bb072d3d-7845-4599-980d-79e0f0179527" />
 
 
 ◦ Mendukung autentikasi ganda (Lokal & Cloud).
