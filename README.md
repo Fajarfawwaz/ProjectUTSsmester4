@@ -14,10 +14,9 @@
 
 ## DI BAWAH INI ADALAH LIST DI CLICK UP PERUBAHAN DARI APLIKASI SAYA YANG SEBELUMNYA , SAYA MERUBAH SEDIKIT TAMPILAN DAN MENAMBAHKAN BEBERAPA FITUR :
 
-<img width="1271" height="528" alt="image" src="https://github.com/user-attachments/assets/1785ae48-a7c5-4dac-b440-1fe2bf5264a8" />
+<img width="1823" height="757" alt="image" src="https://github.com/user-attachments/assets/62fc26cd-1bc6-44b0-aa2a-08e283020e3c" />
 
-
-## UNTUK LINK CLICK UP ( SCRUM ) YANG LEBIH LENGKAPNYA SEBAGAI BERIKUT : https://app.clickup.com/90181768471/v/l/6-901813018848-1
+## UNTUK LINK CLICK UP ( SCRUM ) YANG LEBIH LENGKAPNYA SEBAGAI BERIKUT : https://sharing.clickup.com/90181768471/g/h/2kzm158q-638/0a2b95cb74cd5f0
 
 ## Absensi Fajar adalah solusi manajemen kehadiran berbasis Android yang menggabungkan presisi Biometric Face Recognition dengan validasi lokasi Geofencing GPS. Sistem ini dirancang untuk memastikan integritas data kehadiran dengan teknologi sinkronisasi Cloud yang aman dan efisien.
 
