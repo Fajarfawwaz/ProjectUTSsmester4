@@ -127,13 +127,19 @@ Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangk
 
 # - Admin Dashboard:
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/bde0ba62-d459-4954-9f2a-b646faaa9ba5" />
+
 ## ◦ Global Stats: Menampilkan ringkasan kehadiran seluruh mahasiswa hari ini secara visual.
 
 ## ◦ Digital Clock Real-time: Menunjukkan waktu server yang akurat.
 
 ## ◦ Recent Activity Log: Menampilkan 5 aktivitas absensi terbaru dari seluruh mahasiswa untuk pengawasan instan.
 
-# - Halaman Monitoring Kehadiran (Rekapitulasi):
+# - Halaman Monitoring Kehadiran (Rekapitulasi) dan Untuk Mendownload Detail Mahasiswa :
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/ca162704-934a-49c7-bcdd-2036ad2e8732" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/2914a62a-7598-43ee-b793-fbaff787c1ed" />
+
 
 ## ◦ Daftar seluruh mahasiswa beserta total performa kehadiran (Hadir, Telat, Izin).
 
@@ -141,17 +147,23 @@ Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangk
 
 # - Halaman Daftar Mahasiswa (User Management):
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/5e9275b4-612e-48a1-aec5-280a7eadf375" />
+
 ## ◦ Tampilan format Tabel Zebra (selang-seling warna) untuk kenyamanan membaca data.
 
 ## ◦ Real-time Search: Fitur pencarian instan berdasarkan nama atau email tanpa perlu memuat ulang halaman.
 
 # - Halaman Detail & Export:
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/4d007e37-b5b5-4884-a10f-d006cb2afaf3" />
+
 ## ◦ Ringkasan profil mahasiswa.
 
 ## ◦ Export to Excel (.xls): Menghasilkan laporan kehadiran individu yang siap cetak untuk keperluan administratif.
 
 # - Halaman Kontrol Sistem (The "Obeng" Feature):
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/5aefafe5-3f48-424e-b5fe-9e04d95cbddd" />
 
 ## ◦ Dynamic Configuration: Admin dapat mengubah radius absensi (misal 150m ke 200m) dan jam masuk secara remote tanpa coding ulang.
 
@@ -171,15 +183,15 @@ Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangk
 
 ## • Table settings: ``` id, radius, jam_masuk, broadcast_msg ```
 
-## 📝 Kesimpulan Validasi (Core Logic)
+# 📝 Kesimpulan Validasi (Core Logic)
 
-## Aplikasi ini menerapkan standar keamanan "Anti-Cheating":
+# Aplikasi ini menerapkan standar keamanan "Anti-Cheating":
 
-1. Anti-Foto: Model AI dilatih untuk membedakan wajah asli dan replika.
+## 1. Anti-Foto: Model AI dilatih untuk membedakan wajah asli dan replika.
 
-2. Anti-Fake GPS: Penggunaan Fused Location Provider mempersulit penggunaan aplikasi manipulasi koordinat.
+## 2. Anti-Fake GPS: Penggunaan Fused Location Provider mempersulit penggunaan aplikasi manipulasi koordinat.
 
-3. Device Integrity: Sinkronisasi Cloud menjamin data tidak dapat dimanipulasi melalui clear cache atau pembersihan data lokal oleh user.
+## 3. Device Integrity: Sinkronisasi Cloud menjamin data tidak dapat dimanipulasi melalui clear cache atau pembersihan data lokal oleh user.
 
 
 # 👤 Developer
