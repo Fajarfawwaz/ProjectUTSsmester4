@@ -35,20 +35,19 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 ## 1. Modul Mahasiswa (User Interface)
 
-### - Halaman Login & Recovery:
+## - Halaman Login & Recovery:
 
-# LOGIN, REGISTER, FORGOT PASSWORD : 
+## LOGIN, REGISTER, FORGOT PASSWORD : 
 
 <img width="220" alt="image" src="https://github.com/user-attachments/assets/6eaaffbb-2989-4040-8421-de88a9383aee" />
 <img width="220" alt="image" src="https://github.com/user-attachments/assets/bb072d3d-7845-4599-980d-79e0f0179527" />
 <img width="220" alt="image" src="https://github.com/user-attachments/assets/98358d4b-11e7-49e4-a809-d14f1a4c11e7" />
 
-
 ◦ Mendukung autentikasi ganda (Lokal & Cloud).
 
 ◦ Fitur Identity Recovery: Jika user pindah perangkat atau re-install aplikasi, sistem secara otomatis menarik kembali nama, role, dan data wajah (embedding) dari Cloud ke SQLite lokal.
 
-### - Halaman Dashboard Utama:
+## - Halaman Dashboard Utama:
 
 ◦ Statistik Dinamis: Menampilkan total hadir, telat, dan izin yang disinkronkan langsung dari server AwardSpace.
 
@@ -56,19 +55,19 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 ◦ Profile Preview: Menampilkan foto profil yang diambil saat pendaftaran wajah.
 
-### - Halaman Registrasi Wajah (Biometric Enrollment):
+## - Halaman Registrasi Wajah (Biometric Enrollment):
 
 ◦ Menggunakan Google ML Kit untuk mendeteksi wajah dan FaceNet Model untuk mengonversi citra wajah menjadi 192 titik koordinat angka (embeddings).
 
 ◦ Data ini di-upload ke Cloud untuk keamanan identitas permanen.
 
-### - Halaman Absensi (Scanning & Geofencing):
+## - Halaman Absensi (Scanning & Geofencing):
 
 ◦ Validasi Lokasi: Memeriksa jarak user dengan koordinat Kampus UPB. Jika jarak > 150 meter, akses scan wajah ditutup (mencegah manipulasi lokasi).
 
 ◦Biometric Verification: Mencocokkan wajah saat ini dengan data pendaftaran menggunakan algoritma Cosine Similarity.
 
-### - Halaman Riwayat (Attendance History):
+## - Halaman Riwayat (Attendance History):
 
 ◦ Menampilkan list kronologis kehadiran user yang diambil dari basis data lokal (SQLite).
 
