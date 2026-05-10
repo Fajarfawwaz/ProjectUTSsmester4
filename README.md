@@ -194,6 +194,12 @@ Halaman ini adalah pusat pengaturan data pribadi dan verifikasi keamanan perangk
 ## 3. Device Integrity: Sinkronisasi Cloud menjamin data tidak dapat dimanipulasi melalui clear cache atau pembersihan data lokal oleh user.
 
 
+## Di bawah ini adalah Link Folder Android Studio Project Saya, dan link download aplikasi ( jika ingin mencoba ) : 
+
+### Link Folder Android Studio : https://drive.google.com/file/d/1cDR3nn-R3_LMhvkLk3ytWINYQP-ZEl9u/view?usp=sharing
+
+### Link Download Aplikasi Saya : https://drive.google.com/file/d/1U1XOHtmTXr0z_YSWPCpnxTi_UPGqL4yF/view?usp=sharing 
+
 # 👤 Developer
 
 Fajar Fawwaz Atallah Mahasiswa Teknik Informatika - Universitas Pelita Bangsa
