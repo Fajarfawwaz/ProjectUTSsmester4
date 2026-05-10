@@ -1,6 +1,4 @@
-# Absensi Fajar 📱 
-
-Sistem Absensi Biometrik & Geofencing Berbasis Android Native
+# Absensi Fajar v2.0: Enterprise Cloud-Based Attendance System 🚀
 
 ## IDENTITAS MAHASISWA :
 
@@ -19,111 +17,103 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 <img width="1271" height="528" alt="image" src="https://github.com/user-attachments/assets/1785ae48-a7c5-4dac-b440-1fe2bf5264a8" />
 
 
-## UNTUK LINK CLICK UP ( SCRUM ) YANG LEBIH LENGKAPNYA SEBAGAI BERIKUT : https://app.clickup.com/90181768471/v/l/6-901813018848-1 
+## UNTUK LINK CLICK UP ( SCRUM ) YANG LEBIH LENGKAPNYA SEBAGAI BERIKUT : https://app.clickup.com/90181768471/v/l/6-901813018848-1
 
-## 📝 Deskripsi Proyek
+## Absensi Fajar adalah solusi manajemen kehadiran berbasis Android yang menggabungkan presisi Biometric Face Recognition dengan validasi lokasi Geofencing GPS. Sistem ini dirancang untuk memastikan integritas data kehadiran dengan teknologi sinkronisasi Cloud yang aman dan efisien.
 
-Absensi Fajar adalah solusi manajemen kehadiran cerdas yang dirancang khusus untuk meningkatkan integritas data di lingkungan kampus atau perkantoran. Aplikasi ini berfokus pada fitur Anti-Fraud (Anti-Kecurangan) dengan menggabungkan dua validasi utama secara bersamaan: Verifikasi Wajah (AI) dan Penguncian Lokasi (GPS).
+# 🏗️ Arsitektur Sistem (System Architecture)
 
-Versi ini dikonfigurasi khusus untuk Universitas Pelita Bangsa (UPB) Cikarang, di mana absensi hanya dapat dilakukan jika pengguna berada dalam radius 150 meter dari koordinat gedung utama kampus.
+## Aplikasi ini menggunakan model Hybrid Synchronization:1.Local Storage (SQLite): Digunakan untuk manajemen sesi, caching data riwayat, dan operasional offline terbatas.2.Cloud Storage (MySQL via AwardSpace): Berperan sebagai Single Source of Truth (Sumber data utama) untuk monitoring Administrator secara real-time.3.Communication: Menggunakan Retrofit 2 dengan arsitektur REST API untuk pertukaran data format JSON.
 
-## ✨ Fitur Unggulan
+# 📱 Penjelasan Detail Halaman (Page-by-Page Explanation)
 
-•🛡️ Face AI Recognition: Menggunakan model FaceNet (TensorFlow Lite) untuk mencocokkan wajah secara real-time dengan akurasi tinggi.
+## 1. Modul Mahasiswa (User Interface)
 
-•📍 Smart Geofencing: Validasi koordinat GPS menggunakan FusedLocationProvider. Memblokir akses absensi jika pengguna berada di luar radius Universitas Pelita Bangsa.
+### - Halaman Login & Recovery:
 
-•📊 Premium Analytics Dashboard: Tampilan ringkasan statistik (Hadir, Terlambat, Izin) yang dihitung otomatis dari database lokal secara real-time.
+◦Mendukung autentikasi ganda (Lokal & Cloud).
 
-•🕒 Intelligent Attendance Logic: Penentuan status otomatis berdasarkan waktu (Hadir jika < 09:00, Terlambat jika > 09:00).
+◦ Fitur Identity Recovery: Jika user pindah perangkat atau re-install aplikasi, sistem secara otomatis menarik kembali nama, role, dan data wajah (embedding) dari Cloud ke SQLite lokal.
 
-•📇 Executive Profile: Manajemen identitas digital lengkap dengan fitur ganti foto profil dan Smart Calendar (DatePicker).
+### - Halaman Dashboard Utama:
 
-•☁️ Web Service Sync: Sinkronisasi data otomatis dari database lokal (SQLite) ke server cloud (MySQL) melalui Retrofit API.
+◦ Statistik Dinamis: Menampilkan total hadir, telat, dan izin yang disinkronkan langsung dari server AwardSpace.
 
+◦ Real-time Greeting: Ucapan selamat berdasarkan waktu sistem (Pagi/Siang/Malam).
 
-## 🛠️ Tech Stack
+◦ Profile Preview: Menampilkan foto profil yang diambil saat pendaftaran wajah.
 
-| Komponen | Teknologi | | --- | --- | | Bahasa Pemrograman | Java (Android Native) | | Database HP / Server | SQLite & MySQL via XAMPP | | Artificial Intelligence | TensorFlow Lite & Google ML Kit (FaceNet) | | Networking / API | Retrofit 2 & GSON | | Location Services | Google Play Services (FusedLocationProvider) | | UI Framework | Material Design 3, CardView, Gradient Drawables |
+### - Halaman Registrasi Wajah (Biometric Enrollment):
 
-## 📸 Penjelasan Modul & Antarmuka Aplikasi
+◦ Menggunakan Google ML Kit untuk mendeteksi wajah dan FaceNet Model untuk mengonversi citra wajah menjadi 192 titik koordinat angka (embeddings).
 
-<img width="1018" height="788" alt="Screenshot 2026-04-30 132424" src="https://github.com/user-attachments/assets/5ca0c39c-f0db-4363-a70c-e70efe45b460" />
+◦ Data ini di-upload ke Cloud untuk keamanan identitas permanen.
 
+### - Halaman Absensi (Scanning & Geofencing):
 
+◦ Validasi Lokasi: Memeriksa jarak user dengan koordinat Kampus UPB. Jika jarak > 150 meter, akses scan wajah ditutup (mencegah manipulasi lokasi).
 
-## Berdasarkan alur kerja aplikasi, berikut adalah fungsi dari setiap halaman utama:
+◦Biometric Verification: Mencocokkan wajah saat ini dengan data pendaftaran menggunakan algoritma Cosine Similarity.
 
-1.Splash Screen: Layar pemuatan awal yang melakukan inisialisasi model AI dan pengecekan koneksi server.
+### - Halaman Riwayat (Attendance History):
 
-2.Login Screen: Akses masuk menggunakan email dan password dengan desain Card Overlay yang mewah.
+◦ Menampilkan list kronologis kehadiran user yang diambil dari basis data lokal (SQLite).
 
-3.Register Screen: Pendaftaran pengguna baru yang menyinkronkan data secara otomatis ke database lokal dan server.
+## 2. Modul Administrator (Admin Control Panel)
 
-4.Forgot Password: Fitur pemulihan kata sandi mandiri melalui validasi email terdaftar.
+## - Admin Dashboard:
 
-5.Face Enrollment: Proses pendaftaran identitas biometrik wajah pengguna ke dalam sistem database.
+◦ Global Stats: Menampilkan ringkasan kehadiran seluruh mahasiswa hari ini secara visual.
 
-6.Smart Dashboard: Pusat navigasi yang menampilkan jam realtime, statistik kehadiran, dan status radius GPS kampus.
+◦ Digital Clock Real-time: Menunjukkan waktu server yang akurat.
 
-7.Attendance Scanner: Mesin inti absensi. Menjalankan Geofencing Check terlebih dahulu sebelum mengaktifkan pemindaian wajah.
+◦ Recent Activity Log: Menampilkan 5 aktivitas absensi terbaru dari seluruh mahasiswa untuk pengawasan instan.
 
-8.Success Screen: Umpan balik visual berupa animasi centang hijau saat absensi berhasil diverifikasi.
+## - Halaman Monitoring Kehadiran (Rekapitulasi):
 
-9.Attendance History: Daftar rekapitulasi kehadiran lengkap dengan jam masuk, keluar, dan status otomatis.
+◦ Daftar seluruh mahasiswa beserta total performa kehadiran (Hadir, Telat, Izin).
 
-10.Permission Form: Formulir pengajuan izin/sakit yang dilengkapi dengan fitur unggah foto dokumen pendukung.
+◦ Klik pada nama mahasiswa akan membuka halaman Detail Individu.
 
-11.Executive Profile: Halaman identitas diri yang elegan, menampilkan status keanggotaan dan detail biodata pengguna.
+## - Halaman Daftar Mahasiswa (User Management):
 
-12.Edit Profile: Halaman untuk memperbarui data diri, mengubah foto profil, dan memilih tanggal lahir melalui kalender.
+◦ Tampilan format Tabel Zebra (selang-seling warna) untuk kenyamanan membaca data.
 
+◦ Real-time Search: Fitur pencarian instan berdasarkan nama atau email tanpa perlu memuat ulang halaman.
 
-## ⚙️ Cara Instalasi & Konfigurasi
+## - Halaman Detail & Export:
 
-### 1. Persiapan Server (XAMPP)
+◦ Ringkasan profil mahasiswa.
 
-•Pastikan Apache dan MySQL aktif.
+◦ Export to Excel (.xls): Menghasilkan laporan kehadiran individu yang siap cetak untuk keperluan administratif.
 
-•Buat database db_absensi di phpMyAdmin.
+## - Halaman Kontrol Sistem (The "Obeng" Feature):
 
-•Import struktur tabel yang tersedia dalam folder database_sql.
+◦ Dynamic Configuration: Admin dapat mengubah radius absensi (misal 150m ke 200m) dan jam masuk secara remote tanpa coding ulang.
 
-•Letakkan folder API (PHP) ke dalam direktori C:/xampp/htdocs/absensi_api.
+◦ Maintenance Tools: Tombol Reset Data untuk mengosongkan riwayat absen tiap semester dan Cloud Backup untuk mendownload salinan database SQL.
 
+## 🛠️ Stack Teknologi & Spesifikasi Teknis
 
-### 2. Persiapan Android Studio•Clone repositori ini ke direktori lokal Anda.
+| Komponen | Teknologi | | :--- | :--- | | Language | Java (JDK 11) | | Networking | Retrofit 2.9.0 & OkHttp | | AI/ML | Google ML Kit Face Detection & FaceNet TFLite | | Location | Google Play Services Location (Fused Location) | | UI/UX | Material Design 3, CardView, Lottie Animation | | Backend | PHP 7.4 (RESTful API) | | Database | MySQL (Cloud) & SQLite (Local) | | Reporting | Spreadsheet Logic (HTML to XLS Stream) |
 
-•Buka file com.example.absensifajar.utils.ApiClient.
+## 🗄️ Skema Database Utama (MySQL)
 
-•Ganti BASE_URL dengan IP Address laptop Anda (Gunakan perintah ipconfig di CMD).
+• Table users: ``` id, nama, email, password, embedding (TEXT), role (INT) ```
 
-•Pastikan HP Android dan Laptop terhubung dalam jaringan Wi-Fi yang sama.
+• Table tb_absensi: ``` id, user_id, tanggal, jam, status, lat, lng ```
 
+• Table settings: ``` id, radius, jam_masuk, broadcast_msg ```
 
-### 3. Konfigurasi Radius Geofence
+## 📝 Kesimpulan Validasi (Core Logic)
 
-Koordinat default disetel pada gedung Universitas Pelita Bangsa:
+## Aplikasi ini menerapkan standar keamanan "Anti-Cheating":
 
-•Latitude: -6.3245
+1. Anti-Foto: Model AI dilatih untuk membedakan wajah asli dan replika.
 
-•Longitude: 107.1687
+2. Anti-Fake GPS: Penggunaan Fused Location Provider mempersulit penggunaan aplikasi manipulasi koordinat.
 
-•Radius: 150 Meter
+3. Device Integrity: Sinkronisasi Cloud menjamin data tidak dapat dimanipulasi melalui clear cache atau pembersihan data lokal oleh user.
 
-
-## 📞 Kontak & Pengembang
-
-Jika Anda menemukan kendala teknis atau ingin berdiskusi mengenai pengembangan aplikasi ini, silakan hubungi:
-
-•Nama: Fajar Fawwaz Atallah
-
-•WhatsApp: +62 858-2397-3618
-
-•Email: Fajarfawwaz64@gmail.com
-
-•Universitas: Universitas Pelita Bangsa, Cikarang, Indonesia.
-
-
-## JIKA INGIN MENDOWNLOAD ATAU MENCOBA APLIKASI ABSENSI FAJAR SILAHKAN DOWNLOAD LINK DI BAWAH INI : 
-https://drive.google.com/file/d/1Jx134Xab7R_EOXVTHYTRIb2-YlJiDy2a/view?usp=sharing
+👤 Developer
+Fajar Fawwaz Atallah Mahasiswa Teknik Informatika - Universitas Pelita Bangsa
