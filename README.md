@@ -25,6 +25,12 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 ## Aplikasi ini menggunakan model Hybrid Synchronization:1.Local Storage (SQLite): Digunakan untuk manajemen sesi, caching data riwayat, dan operasional offline terbatas.2.Cloud Storage (MySQL via AwardSpace): Berperan sebagai Single Source of Truth (Sumber data utama) untuk monitoring Administrator secara real-time.3.Communication: Menggunakan Retrofit 2 dengan arsitektur REST API untuk pertukaran data format JSON.
 
+
+# DI Bawah Ini adalah UI HALAMAN MAHASISWA : 
+
+<img width="1018" height="788" alt="Screenshot 2026-04-30 132424" src="https://github.com/user-attachments/assets/13724084-bac6-4cdf-882d-f33f4a3e873a" />
+
+
 # 📱 Penjelasan Detail Halaman (Page-by-Page Explanation)
 
 ## 1. Modul Mahasiswa (User Interface)
