@@ -37,10 +37,11 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 ### - Halaman Login & Recovery:
 
-# LOGIN : 
+# LOGIN, REGISTER, FORGOT PASSWORD : 
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/6eaaffbb-2989-4040-8421-de88a9383aee" />
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/bb072d3d-7845-4599-980d-79e0f0179527" />
+<img width="220" alt="image" src="https://github.com/user-attachments/assets/6eaaffbb-2989-4040-8421-de88a9383aee" />
+<img width="220" alt="image" src="https://github.com/user-attachments/assets/bb072d3d-7845-4599-980d-79e0f0179527" />
+<img width="220" alt="image" src="https://github.com/user-attachments/assets/98358d4b-11e7-49e4-a809-d14f1a4c11e7" />
 
 
 ◦ Mendukung autentikasi ganda (Lokal & Cloud).
