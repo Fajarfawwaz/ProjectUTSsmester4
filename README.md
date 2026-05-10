@@ -22,8 +22,13 @@
 
 # 🏗️ Arsitektur Sistem (System Architecture)
 
-## Aplikasi ini menggunakan model Hybrid Synchronization:1.Local Storage (SQLite): Digunakan untuk manajemen sesi, caching data riwayat, dan operasional offline terbatas.2.Cloud Storage (MySQL via AwardSpace): Berperan sebagai Single Source of Truth (Sumber data utama) untuk monitoring Administrator secara real-time.3.Communication: Menggunakan Retrofit 2 dengan arsitektur REST API untuk pertukaran data format JSON.
+## Aplikasi ini menggunakan model Hybrid Synchronization:
 
+### 1.Local Storage (SQLite): Digunakan untuk manajemen sesi, caching data riwayat, dan operasional offline terbatas.
+
+### 2.Cloud Storage (MySQL via AwardSpace): Berperan sebagai Single Source of Truth (Sumber data utama) untuk monitoring Administrator secara real-time.
+
+### 3.Communication: Menggunakan Retrofit 2 dengan arsitektur REST API untuk pertukaran data format JSON.
 
 # DI Bawah Ini adalah UI login dan  HALAMAN MAHASISWA : 
 
