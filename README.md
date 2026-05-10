@@ -129,11 +129,13 @@
 
 # 🖥️ Menu Utama Modul Administrator (Control Panel) :
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/3361891e-b95e-4419-ab70-81a3280369f2" />
+
 ## Panel Administrator menyediakan 5 menu fungsional utama untuk mengelola seluruh ekosistem absensi di tempat yang dia gunakan :
 
 # - 📊 Menu Monitoring (Rekapitulasi Kehadiran) :  
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/bde0ba62-d459-4954-9f2a-b646faaa9ba5" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/41798e55-1830-4895-903c-d87b849f7860" />
 
 # Menu ini berfungsi sebagai pusat pantauan performa kehadiran seluruh mahasiswa.
 
@@ -142,6 +144,8 @@
 ## • Detail Individu: Admin dapat mengklik salah satu nama untuk melihat rincian riwayat absensi spesifik milik mahasiswa tersebut.
 
 # -  👥 Menu Mahasiswa (Manajemen Akun) :
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/f5c802d6-bb23-466a-8003-f279de753f4d" />
 
 ## Menu yang digunakan untuk mendata seluruh akun mahasiswa yang telah terdaftar di sistem. 
 
@@ -153,9 +157,7 @@
 
 # - 📄 Menu Rekap Excel (Reporting) :
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/ca162704-934a-49c7-bcdd-2036ad2e8732" />
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/2914a62a-7598-43ee-b793-fbaff787c1ed" />
-
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/25ce7219-a919-488a-81c7-9c3a1b418ea7" />
 
 ## Menu ini didedikasikan untuk keperluan administratif dan pelaporan formal. 
 
@@ -165,7 +167,7 @@
 
 # - ⚙️ Menu Sistem (Konfigurasi & Maintenance) :
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/5e9275b4-612e-48a1-aec5-280a7eadf375" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/a4e4892b-b216-4b08-8442-bdd2ca939921" />
 
 ## Dikenal sebagai fitur "Obeng", menu ini memberikan fleksibilitas bagi Admin untuk mengatur kebijakan kampus secara dinamis.
 
@@ -177,7 +179,8 @@
 
 # - 📩 Menu Validasi Izin & Sakit (Document Verification) :
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/4d007e37-b5b5-4884-a10f-d006cb2afaf3" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/a019b116-c228-43da-bd1c-4dadd1db93cc" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/8e14f165-536d-4014-ab29-47bca5dd6643" />
 
 ## Menu terbaru yang berfungsi untuk memvalidasi alasan ketidakhadiran mahasiswa.
 
@@ -187,13 +190,17 @@
 
 ## • Swipe to Refresh: Mendukung fitur tarik layar untuk menyinkronkan data pengajuan izin terbaru yang masuk.
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/5aefafe5-3f48-424e-b5fe-9e04d95cbddd" />
+# - 🕒 Live Activity Stream (Feed Dashboard) :
 
-## ◦ Dynamic Configuration: Admin dapat mengubah radius absensi (misal 150m ke 200m) dan jam masuk secara remote tanpa coding ulang.
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/9e1888e8-7f64-425d-b867-9fbe94ffbb42" />
 
-## ◦ Maintenance Tools: Tombol Reset Data untuk mengosongkan riwayat absen tiap semester dan Cloud Backup untuk mendownload salinan database SQL.
+## Selain 5 menu di atas, Dashboard Admin dilengkapi dengan barisan Aktivitas Absensi Terbaru yang berfungsi untuk:
 
-# 🛠️ Stack Teknologi & Spesifikasi Teknis
+## • Memberikan notifikasi visual instan mengenai siapa mahasiswa yang baru saja melakukan absensi.
+
+## • Menampilkan jam presisi (WIB) dan status absensi secara live saat Admin membuka aplikasi.
+
+# 🛠️ Teknologi & Spesifikasi Teknis (Tech Stack)
 
 | Komponen | Teknologi | | :--- | :--- | | Language | Java (JDK 11) | | Networking | Retrofit 2.9.0 & OkHttp | | AI/ML | Google ML Kit Face Detection & FaceNet TFLite | | Location | Google Play Services Location (Fused Location) | | UI/UX | Material Design 3, CardView, Lottie Animation | | Backend | PHP 7.4 (RESTful API) | | Database | MySQL (Cloud) & SQLite (Local) | | Reporting | Spreadsheet Logic (HTML to XLS Stream) |
 
