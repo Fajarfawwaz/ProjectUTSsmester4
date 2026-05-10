@@ -49,6 +49,8 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 ## - Halaman Dashboard Utama:
 
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/6c85796b-ff35-4a29-926f-2bb58e604c41" />
+
 ◦ Statistik Dinamis: Menampilkan total hadir, telat, dan izin yang disinkronkan langsung dari server AwardSpace.
 
 ◦ Real-time Greeting: Ucapan selamat berdasarkan waktu sistem (Pagi/Siang/Malam).
@@ -56,6 +58,8 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 ◦ Profile Preview: Menampilkan foto profil yang diambil saat pendaftaran wajah.
 
 ## - Halaman Registrasi Wajah (Biometric Enrollment):
+
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/bb3142f2-06b3-493c-b93b-8c44187cc484" />
 
 ◦ Menggunakan Google ML Kit untuk mendeteksi wajah dan FaceNet Model untuk mengonversi citra wajah menjadi 192 titik koordinat angka (embeddings).
 
