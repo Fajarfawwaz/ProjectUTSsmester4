@@ -105,6 +105,9 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 ## 🗄️ Skema Database Utama (MySQL)
 
+<img width="1914" height="414" alt="image" src="https://github.com/user-attachments/assets/1b9f33ad-5ad8-4d5f-aeb6-ed37270be217" />
+
+
 • Table users: ``` id, nama, email, password, embedding (TEXT), role (INT) ```
 
 • Table tb_absensi: ``` id, user_id, tanggal, jam, status, lat, lng ```
