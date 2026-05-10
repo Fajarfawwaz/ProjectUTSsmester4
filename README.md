@@ -39,7 +39,10 @@ SAYA MEMBUAT TUGAS INI UNTUK MENGERJAKAN TUGAS UTS PEMROGRAMAN MOBILE SEMESTER 4
 
 # LOGIN : 
 
-<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/9dacfaea-4c93-4f07-afba-32f3b78a7ee8" />
+<p align="center">
+  <img src="<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/9dacfaea-4c93-4f07-afba-32f3b78a7ee8" />
+"  width="250">
+</p>
 
 # REGISTRASI : 
 
